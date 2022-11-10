@@ -4,7 +4,7 @@
 
 ## `🔥 Giới thiệu 🔥`
 
-Đây là một chương trình máy tính cộng trừ - nhân chia đơn giản được xây dựng bằng ReactJS và Redux Toolkit. Ngoài ra, giao diện của chương trình đã được thiết kế hoàn toàn bằng SCSS.
+Đây là một chương trình máy tính cộng trừ - nhân chia đơn giản được xây dựng bằng ReactJS và Redux Toolkit. Ngoài ra, giao diện của chương trình đã được thiết kế bằng SCSS và Ant Design.
 
 ### Chương trình có chế độ thay đổi theme
 
