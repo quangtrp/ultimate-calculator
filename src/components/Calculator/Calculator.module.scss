@@ -1,3 +1,5 @@
+@import "../GlobalStyles/responsive.scss";
+
 .calculator {
   background-color: #f6f9fb;
   height: 58rem;
@@ -10,6 +12,10 @@
   padding: 16px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   transition: all 0.6s ease;
+
+  @include view350 {
+    width: calc(100% - 30px);
+  }
 }
 
 .calculator-dark {
@@ -24,4 +30,8 @@
   padding: 16px;
   box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
   transition: all 0.6s ease;
+
+  @include view350 {
+    width: calc(100% - 36px);
+  }
 }

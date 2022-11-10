@@ -1,3 +1,5 @@
+@import "./components/GlobalStyles/responsive.scss";
+
 .App {
   text-align: center;
   height: 100vh;
@@ -28,4 +30,9 @@
   position: absolute;
   top: 16px;
   right: 16px;
+
+  @include view350 {
+    top: 8px;
+    right: 8px;
+  }
 }
