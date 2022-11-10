@@ -1,0 +1,20 @@
+.digit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #51bdf3;
+  background-color: #fbfbfe;
+  transition: 0.6s ease all;
+
+  &:hover {
+    background-color: #ececee;
+  }
+
+  &.zero {
+    grid-column: span 2;
+  }
+}

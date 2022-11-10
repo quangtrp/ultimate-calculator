@@ -1,0 +1,30 @@
+.display-screen {
+  width: 100%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  padding: 0 4px;
+  flex: 2;
+  overflow: hidden;
+}
+
+.previous-values {
+  color: #a1a1a1;
+  text-align: end;
+  width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+.current-values {
+  margin-top: 10px;
+  font-size: 3.4rem;
+  text-align: end;
+  width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}

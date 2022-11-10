@@ -1,0 +1,36 @@
+.buttonList {
+  width: 290px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 0.8rem;
+  column-gap: 0.8rem;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #fefeff;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 600;
+  transition: 0.6s ease all;
+
+  &:hover {
+    background-color: #ececee;
+  }
+
+  // Customizing buttons
+
+  // Equal
+  &.button-equal {
+    grid-row: span 2;
+    background-color: #18adff;
+  }
+  &.button-equal:hover {
+    background-color: #0a84c6;
+    transition: 0.6s ease all;
+  }
+}
