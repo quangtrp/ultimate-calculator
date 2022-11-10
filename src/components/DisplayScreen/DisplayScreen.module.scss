@@ -27,4 +27,16 @@
   overflow-wrap: break-word;
   word-wrap: break-word;
   hyphens: auto;
+  transition: all 0.6s ease;
+}
+
+.current-values-dark {
+  color: #fafbfd;
+  margin-top: 10px;
+  font-size: 3.4rem;
+  text-align: end;
+  width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
 }

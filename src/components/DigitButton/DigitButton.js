@@ -7,8 +7,10 @@ import { setValues } from "../../redux/calculatorSlice";
 const cx = classNames.bind(styles);
 
 const DigitButton = ({ digit }) => {
+  // Redux States
   const dispatch = useDispatch();
   const currentValues = useSelector((state) => state.calculator.currentValues);
+  const darkTheme = useSelector((state) => state.calculator.darkTheme);
 
   const chooseDigit = () => {
     let newValues = currentValues;
@@ -18,7 +20,10 @@ const DigitButton = ({ digit }) => {
 
   return (
     <div
-      className={cx("digit", digit === "0" ? "zero" : "")}
+      className={cx(
+        darkTheme ? "digit-dark" : "digit",
+        digit === "0" ? "zero" : ""
+      )}
       onClick={chooseDigit}
     >
       {digit}

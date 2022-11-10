@@ -3,7 +3,7 @@ import classNames from "classnames/bind";
 import styles from "./ButtonList.module.scss";
 import DigitButton from "../DigitButton/DigitButton";
 import OperatorButton from "../OperatorButton/OperatorButton";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import {
   setClear,
   chooseEvaluation,
@@ -13,7 +13,9 @@ import {
 const cx = classNames.bind(styles);
 
 const ButtonList = () => {
+  // Redux States
   const dispatch = useDispatch();
+  const darkTheme = useSelector((state) => state.calculator.darkTheme);
 
   const clearButton = () => {
     dispatch(setClear());
@@ -29,10 +31,16 @@ const ButtonList = () => {
 
   return (
     <div className={cx("buttonList")}>
-      <div className={cx("button", "button-clear")} onClick={clearButton}>
+      <div
+        className={cx(darkTheme ? "button-dark" : "button", "button-clear")}
+        onClick={clearButton}
+      >
         AC
       </div>
-      <div className={cx("button")} onClick={backButton}>
+      <div
+        className={cx(darkTheme ? "button-dark" : "button")}
+        onClick={backButton}
+      >
         Back
       </div>
       <OperatorButton operator={"/"} />

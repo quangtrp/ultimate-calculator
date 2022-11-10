@@ -8,7 +8,28 @@
   font-weight: 600;
   color: #51bdf3;
   background-color: #fbfbfe;
-  transition: 0.6s ease all;
+  transition: all 0.6s ease-out;
+
+  &:hover {
+    background-color: #ececee;
+  }
+
+  &.zero {
+    grid-column: span 2;
+  }
+}
+
+.digit-dark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #51bdf3;
+  background-color: #2e3134;
+  transition: all 0.6s ease-out;
 
   &:hover {
     background-color: #ececee;

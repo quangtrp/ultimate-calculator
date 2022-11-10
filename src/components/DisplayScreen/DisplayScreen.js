@@ -12,6 +12,7 @@ const DisplayScreen = () => {
     (state) => state.calculator.previousValues
   );
   const operation = useSelector((state) => state.calculator.operation);
+  const darkTheme = useSelector((state) => state.calculator.darkTheme);
 
   // Format Values
   const INTEGER_FORMATTER = new Intl.NumberFormat("en-us", {
@@ -30,7 +31,9 @@ const DisplayScreen = () => {
       <div className={cx("previous-values")}>
         {`${previousValues} ${operation}`}
       </div>
-      <div className={cx("current-values")}>{formatValue(currentValues)}</div>
+      <div className={cx(darkTheme ? "current-values-dark" : "current-values")}>
+        {formatValue(currentValues)}
+      </div>
     </div>
   );
 };

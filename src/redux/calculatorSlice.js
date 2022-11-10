@@ -5,6 +5,7 @@ const initialState = {
   previousValues: "",
   operation: "",
   override: false,
+  darkTheme: false,
 };
 
 const evaluate = ({ currentValues, previousValues, operation }) => {
@@ -123,6 +124,11 @@ export const calculatorSlice = createSlice({
 
       state.currentValues = state.currentValues.slice(0, -1);
     },
+
+    // Change Theme
+    switchTheme: (state, action) => {
+      state.darkTheme = action.payload;
+    },
   },
 });
 
@@ -132,6 +138,7 @@ export const {
   chooseOperation,
   chooseEvaluation,
   chooseBack,
+  switchTheme,
 } = calculatorSlice.actions;
 
 export default calculatorSlice.reducer;

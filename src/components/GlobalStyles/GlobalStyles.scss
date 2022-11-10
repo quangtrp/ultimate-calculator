@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;600&display=swap");
+@import "~antd/dist/antd.css";
 
 * {
   box-sizing: border-box;
@@ -8,7 +9,6 @@
 
 html {
   font-size: 62.5%;
-  background-color: #dbf1ff;
 }
 body {
   font-size: 1.6rem;
